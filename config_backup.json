@@ -1,0 +1,17 @@
+{
+    "AUDIT_SETTINGS": {
+        "MAX_PAGES_TO_SCAN": 5,
+        "MAX_CRAWL_DEPTH": 1,
+        "SEEDS_PER_PAGE": 3,
+        "CRAWL_TIMEOUT_SECONDS": 30 
+    },
+    "AI_SETTINGS": {
+        "ACTIVE_PROVIDER": "gemini", 
+        "GEMINI_MODEL_PRO": "gemini-2.5-pro",
+        "GEMINI_MODEL_FLASH": "gemini-2.5-flash",
+        "OPENAI_MODEL": "gpt-4o",
+        "OLLAMA_MODEL": "llama3:8b",
+        "DEFAULT_MODEL": "gemini-2.5-pro",
+        "API_KEY_ENV_VAR": "AI_KEY"
+    }
+}

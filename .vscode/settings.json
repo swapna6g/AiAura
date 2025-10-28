@@ -1,0 +1,9 @@
+{
+    // 1. Tell Pylance where to find the code (add 'src' to the path)
+    "python.analysis.extraPaths": [
+        "./src"
+    ],
+    // 2. Set the execution source to the 'src' directory (where your app runs)
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.terminal.activateEnvironment": true
+}

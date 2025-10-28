@@ -1,0 +1,18 @@
+{
+    "AUDIT_SETTINGS": {
+        "MAX_PAGES_TO_SCAN": 2,
+        "MAX_CRAWL_DEPTH": 1,
+        "SEEDS_PER_PAGE": 2,
+        "CRAWL_TIMEOUT_SECONDS": 30,
+        "OUTPUT_FILE_PATH": "C:/Users/DELL/Documents/Hackathon/accessibility-auditor_python_withoutAI/src/output.JSON"
+    },
+    "AI_SETTINGS": {
+        "ACTIVE_PROVIDER": "gemini",
+        "GEMINI_MODEL_PRO": "gemini-2.0-flash-thinking-exp",
+        "GEMINI_MODEL_FLASH": "gemini-2.0-flash-exp",
+        "OPENAI_MODEL": "gpt-4o",
+        "OLLAMA_MODEL": "llama3:8b",
+        "DEFAULT_MODEL": "gemini-2.0-flash-exp",
+        "API_KEY_ENV_VAR": "AI_KEY"
+    }
+}

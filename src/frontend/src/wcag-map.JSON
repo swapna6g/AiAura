@@ -1,0 +1,524 @@
+[
+    {
+        "sc_id": "1.1.1",
+        "level": "A",
+        "ui_description": "All non-text content must have a text alternative.",
+        "fix_tip": "Ensure meaningful images, buttons, and controls have descriptive alt text or labels. Decorative images must have alt=\"\"."
+    },
+    {
+        "sc_id": "1.2.1",
+        "level": "A",
+        "ui_description": "Audio-only and Video-only (Prerecorded) must have a text alternative (transcript/description).",
+        "fix_tip": "Provide a link to a full text transcript below the media player."
+    },
+    {
+        "sc_id": "1.2.2",
+        "level": "A",
+        "ui_description": "Captions are required for all prerecorded video with sound.",
+        "fix_tip": "Include a synchronized caption file (SRT or VTT) with the media player."
+    },
+    {
+        "sc_id": "1.2.3",
+        "level": "A",
+        "ui_description": "Audio Description or Media Alternative is provided for prerecorded video.",
+        "fix_tip": "Embed a video version that includes an audio description track for visual-only actions."
+    },
+    {
+        "sc_id": "1.2.4",
+        "level": "AA",
+        "ui_description": "Live audio content must have real-time captions.",
+        "fix_tip": "Use a real-time captioning service for all live streams."
+    },
+    {
+        "sc_id": "1.2.5",
+        "level": "AA",
+        "ui_description": "Prerecorded video must have audio description.",
+        "fix_tip": "Ensure all significant visual information is conveyed either via dialogue or a separate audio description track."
+    },
+    {
+        "sc_id": "1.2.6",
+        "level": "AAA",
+        "ui_description": "Sign Language (Prerecorded) is provided for all prerecorded audio content.",
+        "fix_tip": "Provide a sign language interpretation for all prerecorded audio and video content."
+    },
+    {
+        "sc_id": "1.2.7",
+        "level": "AAA",
+        "ui_description": "Extended Audio Description (Prerecorded) is provided when standard audio description is insufficient.",
+        "fix_tip": "Pause the video when necessary to include an extended audio description that conveys all necessary visual information."
+    },
+    {
+        "sc_id": "1.2.8",
+        "level": "AAA",
+        "ui_description": "Media Alternative (Prerecorded) is provided for all prerecorded video.",
+        "fix_tip": "Provide a link to a full text transcript including all dialogue and visual information for the video."
+    },
+    {
+        "sc_id": "1.2.9",
+        "level": "AAA",
+        "ui_description": "Audio-only (Live) has an alternative.",
+        "fix_tip": "Provide a text-based alternative (e.g., live human transcription) for all live audio-only content."
+    },
+    {
+        "sc_id": "1.3.1",
+        "level": "A",
+        "ui_description": "Information and relationships conveyed through visual presentation are programmatically determined.",
+        "fix_tip": "Use proper semantic HTML: headings (h1-h6), lists (ul/ol), and tables (th/caption) instead of styling alone."
+    },
+    {
+        "sc_id": "1.3.2",
+        "level": "A",
+        "ui_description": "Meaningful sequence is ensured when the sequence affects meaning.",
+        "fix_tip": "Verify the source code order matches the logical reading order. Use CSS flex/grid responsibly."
+    },
+    {
+        "sc_id": "1.3.3",
+        "level": "A",
+        "ui_description": "Do not rely on sight alone (shape, size, or color) for instructions.",
+        "fix_tip": "Always include text labels or icons along with color or positional cues."
+    },
+    {
+        "sc_id": "1.3.4",
+        "level": "AA",
+        "ui_description": "Content must adapt to device orientation (portrait/landscape).",
+        "fix_tip": "Avoid CSS or device-level settings that lock the screen orientation."
+    },
+    {
+        "sc_id": "1.3.5",
+        "level": "AA",
+        "ui_description": "Identify input purpose. (Fields should use the 'autocomplete' attribute).",
+        "fix_tip": "Use the 'autocomplete' attribute on form fields where appropriate to specify the meaning."
+    },
+    {
+        "sc_id": "1.3.6",
+        "level": "AAA",
+        "ui_description": "Identify Purpose: The purpose of UI components, icons, and regions can be programmatically determined.",
+        "fix_tip": "Use appropriate ARIA roles and landmarks (e.g., role='search', role='main') to identify the purpose of regions and components."
+    },
+    {
+        "sc_id": "1.4.1",
+        "level": "A",
+        "ui_description": "Color alone is not used to convey information or distinguish a visual element.",
+        "fix_tip": "Ensure links or form errors are marked with text, icons, or underline, not just a color change."
+    },
+    {
+        "sc_id": "1.4.2",
+        "level": "A",
+        "ui_description": "Audio content does not play automatically for more than 3 seconds.",
+        "fix_tip": "Any auto-playing audio must be user-controlled or less than 3 seconds long."
+    },
+    {
+        "sc_id": "1.4.3",
+        "level": "AA",
+        "ui_description": "Text contrast must meet a minimum ratio of 4.5:1.",
+        "fix_tip": "Increase the contrast ratio of text and background colors (or 3:1 for large text)."
+    },
+    {
+        "sc_id": "1.4.4",
+        "level": "AA",
+        "ui_description": "Text can be resized without loss of content or functionality up to 200%.",
+        "fix_tip": "Avoid fixed font units (like 'px') and ensure content is not clipped when zoomed."
+    },
+    {
+        "sc_id": "1.4.5",
+        "level": "AA",
+        "ui_description": "Images of text are only used for purely decorative purposes.",
+        "fix_tip": "Replace images of text with actual HTML text and CSS styling."
+    },
+    {
+        "sc_id": "1.4.6",
+        "level": "AAA",
+        "ui_description": "Contrast (Enhanced): Text contrast must meet a ratio of 7:1.",
+        "fix_tip": "Achieve a minimum contrast ratio of 7:1 (or 4.5:1 for large text) for all essential text content."
+    },
+    {
+        "sc_id": "1.4.7",
+        "level": "AAA",
+        "ui_description": "Low or No Background Audio: Audio content with speech has no or very low background noise.",
+        "fix_tip": "Ensure the background music or noise is at least 20dB lower than the foreground speech content."
+    },
+    {
+        "sc_id": "1.4.8",
+        "level": "AAA",
+        "ui_description": "Visual Presentation: Text blocks are easily readable with user-selectable styling and spacing.",
+        "fix_tip": "Do not fully justify text, use appropriate line height (at least 1.5), and ensure text blocks are not too wide."
+    },
+    {
+        "sc_id": "1.4.9",
+        "level": "AAA",
+        "ui_description": "Images of Text (No Exception): Images of text are only used for decoration.",
+        "fix_tip": "The use of images of text is prohibited except for decorative purposes."
+    },
+    {
+        "sc_id": "1.4.10",
+        "level": "AA",
+        "ui_description": "Reflow: Content must adapt to a single column when zoomed.",
+        "fix_tip": "Test the page at 400% zoom (1280px wide content) on a maximized browser window. No horizontal scrolling."
+    },
+    {
+        "sc_id": "1.4.11",
+        "level": "AA",
+        "ui_description": "Non-text content (icons, buttons, graphs) must have contrast ratio of at least 3:1.",
+        "fix_tip": "Increase the contrast ratio of critical interface elements (e.g., icons, disabled states, chart lines)."
+    },
+    {
+        "sc_id": "1.4.12",
+        "level": "AA",
+        "ui_description": "Text Spacing: No loss of content when line height, letter, word, or paragraph spacing is adjusted.",
+        "fix_tip": "Ensure content doesn't overlap or become unreadable when text spacing settings are applied."
+    },
+    {
+        "sc_id": "1.4.13",
+        "level": "AA",
+        "ui_description": "Content on Hover or Focus: Dismissable and Persistent.",
+        "fix_tip": "Ensure tooltips and popovers can be easily dismissed, do not disappear when moving the mouse, and are accessible by keyboard."
+    },
+    {
+        "sc_id": "2.1.1",
+        "level": "A",
+        "ui_description": "All functionality must be operable via keyboard.",
+        "fix_tip": "Manually navigate the entire site using only the Tab, Enter, and Space keys. Ensure all controls are reachable."
+    },
+    {
+        "sc_id": "2.1.2",
+        "level": "A",
+        "ui_description": "No Keyboard Trap: Focus must not be trapped in one area.",
+        "fix_tip": "Ensure the user can easily tab out of all interactive components (e.g., modals, carousels)."
+    },
+    {
+        "sc_id": "2.1.3",
+        "level": "AAA",
+        "ui_description": "Keyboard (No Exception): All functionality is operable through a keyboard without time limits.",
+        "fix_tip": "Ensure no exceptions are made; all actions must be executable via the keyboard."
+    },
+    {
+        "sc_id": "2.1.4",
+        "level": "A",
+        "ui_description": "Character Key Shortcuts: User can disable or modify single-key shortcuts.",
+        "fix_tip": "Avoid using single letter keys as keyboard shortcuts unless the user is focused on an input field."
+    },
+    {
+        "sc_id": "2.2.1",
+        "level": "A",
+        "ui_description": "Timing Adjustable: Time limits can be adjusted, extended, or turned off.",
+        "fix_tip": "Ensure the user is alerted before a session times out and can easily extend the time limit."
+    },
+    {
+        "sc_id": "2.2.2",
+        "level": "A",
+        "ui_description": "Pause, Stop, Hide: Moving, blinking, scrolling, or auto-updating content can be stopped.",
+        "fix_tip": "Provide a mechanism to pause or stop all auto-moving content (carousels, animations)."
+    },
+    {
+        "sc_id": "2.2.3",
+        "level": "AAA",
+        "ui_description": "No Timing: Timing is not an essential part of the event or activity.",
+        "fix_tip": "Avoid imposing any time limits on users for reading or interacting with content."
+    },
+    {
+        "sc_id": "2.2.4",
+        "level": "AAA",
+        "ui_description": "Interruptions: Interruptions can be postponed or suppressed by the user.",
+        "fix_tip": "Allow users to postpone or suppress non-essential and non-emergency interruptions (e.g., update alerts)."
+    },
+    {
+        "sc_id": "2.2.5",
+        "level": "AAA",
+        "ui_description": "Re-authenticating: If a session expires, the user can re-authenticate without losing data.",
+        "fix_tip": "Ensure data entered before re-authentication is preserved after a successful login."
+    },
+    {
+        "sc_id": "2.2.6",
+        "level": "AAA",
+        "ui_description": "Timeouts: Users are warned of any timeout that could result in data loss.",
+        "fix_tip": "Provide a warning before any timeout, allowing the user to request more time or preserve data."
+    },
+    {
+        "sc_id": "2.3.1",
+        "level": "A",
+        "ui_description": "Three Flashes or Below Threshold: No content flashes more than three times in any one-second period.",
+        "fix_tip": "Avoid rapid flashing animations, especially red ones, to prevent seizures."
+    },
+    {
+        "sc_id": "2.3.2",
+        "level": "AAA",
+        "ui_description": "Three Flashes: No content flashes more than three times per second.",
+        "fix_tip": "Ensure all flashing content, including small areas, adheres to the maximum flash rate."
+    },
+    {
+        "sc_id": "2.3.3",
+        "level": "AAA",
+        "ui_description": "Animation from Interactions: Motion animation can be disabled.",
+        "fix_tip": "Provide a mechanism (e.g., a setting or a CSS media query) to disable non-essential animations."
+    },
+    {
+        "sc_id": "2.4.1",
+        "level": "A",
+        "ui_description": "Bypass Blocks: A mechanism is available to bypass blocks of content (e.g., Skip to Main Content).",
+        "fix_tip": "Implement a keyboard-accessible 'Skip to Main Content' link visible on focus."
+    },
+    {
+        "sc_id": "2.4.2",
+        "level": "A",
+        "ui_description": "Page Titled: Web pages have descriptive titles.",
+        "fix_tip": "Add a descriptive and concise <title> element to the document's <head>."
+    },
+    {
+        "sc_id": "2.4.3",
+        "level": "A",
+        "ui_description": "Focus Order: The focus order must preserve meaning and operability.",
+        "fix_tip": "Ensure the tabbing order is logical and intuitive (usually matching visual order)."
+    },
+    {
+        "sc_id": "2.4.4",
+        "level": "A",
+        "ui_description": "Link Purpose (In Context): The purpose of each link can be determined from the link text alone.",
+        "fix_tip": "Avoid generic link text like 'Click Here.' Provide context within the <a> tag or its surrounding text."
+    },
+    {
+        "sc_id": "2.4.5",
+        "level": "AA",
+        "ui_description": "Multiple Ways: Provide multiple ways to locate a web page within a set of web pages.",
+        "fix_tip": "Include at least two navigation options: site map, search, breadcrumbs, or primary navigation."
+    },
+    {
+        "sc_id": "2.4.6",
+        "level": "AA",
+        "ui_description": "Headings and Labels: Headings and labels describe topic or purpose.",
+        "fix_tip": "Ensure all headings and form labels are clear, concise, and accurately describe the content below/field next to them."
+    },
+    {
+        "sc_id": "2.4.7",
+        "level": "AA",
+        "ui_description": "Focus Visible: Any user interface component that receives keyboard focus must have a visible focus indicator.",
+        "fix_tip": "Ensure the default focus ring is not removed or obscured by CSS. Custom focus styles must meet 3:1 contrast."
+    },
+    {
+        "sc_id": "2.4.8",
+        "level": "AAA",
+        "ui_description": "Location: Information about the user's location within a set of web pages is provided.",
+        "fix_tip": "Use breadcrumbs, a site map, or a clear heading structure to indicate the current page's location."
+    },
+    {
+        "sc_id": "2.4.9",
+        "level": "AAA",
+        "ui_description": "Link Purpose (Link Only): The purpose of each link can be determined from the link text alone.",
+        "fix_tip": "Ensure the link text is fully descriptive without needing surrounding context (stricter than 2.4.4)."
+    },
+    {
+        "sc_id": "2.4.10",
+        "level": "AAA",
+        "ui_description": "Section Headings: Content is organized using section headings.",
+        "fix_tip": "Ensure all major sections of content are properly introduced by a heading element (h1-h6)."
+    },
+    {
+        "sc_id": "2.4.11",
+        "level": "AA",
+        "ui_description": "**Focus Not Obscured (Minimum):** Focus indicator is at least partially visible when focused.",
+        "fix_tip": "Ensure sticky headers, footers, or overlays do not completely hide the keyboard focus indicator."
+    },
+    {
+        "sc_id": "2.4.12",
+        "level": "AAA",
+        "ui_description": "**Focus Not Obscured (Enhanced):** Focus indicator is completely visible when focused.",
+        "fix_tip": "Ensure sticky headers, footers, or overlays do not hide *any* portion of the keyboard focus indicator."
+    },
+    {
+        "sc_id": "2.4.13",
+        "level": "AAA",
+        "ui_description": "**Focus Appearance (Enhanced):** The focus indicator is clearly visible and meets minimum size and contrast requirements.",
+        "fix_tip": "The focus indicator must be a minimum size and have a 3:1 contrast ratio against the unfocused state."
+    },
+    {
+        "sc_id": "2.5.1",
+        "level": "A",
+        "ui_description": "Pointer Gestures: Functionality that uses multipoint or path-based gestures can be operated with a single pointer.",
+        "fix_tip": "Provide a button or control for complex gestures (e.g., zoom/pinch, swipe) that a single click can activate."
+    },
+    {
+        "sc_id": "2.5.2",
+        "level": "A",
+        "ui_description": "Pointer Cancellation: The down-event of a pointer gesture does not initiate any function.",
+        "fix_tip": "Ensure functionality is completed on the 'up' event (release) of the pointer, not the 'down' event (press)."
+    },
+    {
+        "sc_id": "2.5.3",
+        "level": "A",
+        "ui_description": "Label in Name: The accessible name of a component contains the text presented visually.",
+        "fix_tip": "Ensure the text visible on a button (e.g., 'Submit') is included in its accessible name/label."
+    },
+    {
+        "sc_id": "2.5.4",
+        "level": "A",
+        "ui_description": "Motion Actuation: Functionality that relies on device motion (shaking) has a UI-based alternative.",
+        "fix_tip": "Provide a standard button or control to trigger the same action as the motion gesture."
+    },
+    {
+        "sc_id": "2.5.5",
+        "level": "AA",
+        "ui_description": "Target Size: Target size for touch/mouse must be at least 44x44 CSS pixels.",
+        "fix_tip": "Ensure interactive targets (buttons, links) are large enough to be easily activated."
+    },
+    {
+        "sc_id": "2.5.6",
+        "level": "AAA",
+        "ui_description": "Concurrent Input Mechanisms: Content does not restrict the input method.",
+        "fix_tip": "Allow users to switch between mouse, keyboard, or speech input without system restrictions."
+    },
+    {
+        "sc_id": "2.5.7",
+        "level": "AA",
+        "ui_description": "**Dragging Movements:** All dragging movements can be operated by a single pointer without dragging.",
+        "fix_tip": "Provide an alternative to drag-and-drop actions, such as buttons to move items or selecting start/end points."
+    },
+    {
+        "sc_id": "2.5.8",
+        "level": "AA",
+        "ui_description": "**Target Size (Minimum):** Target size must be at least 24x24 CSS pixels.",
+        "fix_tip": "Ensure small interactive targets are at least 24x24 pixels, with specified exceptions (e.g., text links in a sentence)."
+    },
+    {
+        "sc_id": "3.1.1",
+        "level": "A",
+        "ui_description": "Language of Page: The default human language of the page is identified.",
+        "fix_tip": "Set the correct language using the 'lang' attribute on the <html> element (e.g., <html lang='en'>)."
+    },
+    {
+        "sc_id": "3.1.2",
+        "level": "AA",
+        "ui_description": "Language of Parts: The human language of any part of the content is identified.",
+        "fix_tip": "Use the 'lang' attribute on individual elements (e.g., <span lang='fr'>) when the text differs from the page language."
+    },
+    {
+        "sc_id": "3.1.3",
+        "level": "AAA",
+        "ui_description": "Unusual Words: Definitions are provided for unusual words, idioms, and jargon.",
+        "fix_tip": "Include links to definitions or glossary entries for complex or context-specific words."
+    },
+    {
+        "sc_id": "3.1.4",
+        "level": "AAA",
+        "ui_description": "Abbreviations: The expanded form of abbreviations is provided.",
+        "fix_tip": "Use the `<abbr>` element with a `title` attribute, or define abbreviations the first time they are used."
+    },
+    {
+        "sc_id": "3.1.5",
+        "level": "AAA",
+        "ui_description": "Reading Level: Content requires no more than a lower secondary education level to read.",
+        "fix_tip": "Use simpler language, short sentences, and common words where possible."
+    },
+    {
+        "sc_id": "3.1.6",
+        "level": "AAA",
+        "ui_description": "Pronunciation: A mechanism is available to indicate the correct pronunciation of words.",
+        "fix_tip": "Provide an audio file or phonetic notation for words whose meaning changes with pronunciation."
+    },
+    {
+        "sc_id": "3.2.1",
+        "level": "A",
+        "ui_description": "On Focus: Changing the state of a user interface component does not automatically cause a change of context.",
+        "fix_tip": "Tabbing to an element should not automatically submit a form or navigate to a new page."
+    },
+    {
+        "sc_id": "3.2.2",
+        "level": "A",
+        "ui_description": "On Input: Changing the setting of a user interface component does not automatically cause a change of context.",
+        "fix_tip": "Selecting a radio button or checkbox should not automatically submit a form or navigate to a new page."
+    },
+    {
+        "sc_id": "3.2.3",
+        "level": "AA",
+        "ui_description": "Consistent Navigation: Navigational mechanisms that are repeated appear in the same relative order.",
+        "fix_tip": "Ensure the order of primary navigation links remains consistent across all pages."
+    },
+    {
+        "sc_id": "3.2.4",
+        "level": "AA",
+        "ui_description": "Consistent Identification: Components with the same functionality are consistently identified.",
+        "fix_tip": "If an icon is used as a 'Shopping Cart' on one page, it must look like a shopping cart on all pages."
+    },
+    {
+        "sc_id": "3.2.5",
+        "level": "AAA",
+        "ui_description": "Change on Request: Changes of context are only initiated by user request or an option to turn them off.",
+        "fix_tip": "Prevent automatic pop-ups, refreshes, or navigation unless the user explicitly requested the change."
+    },
+    {
+        "sc_id": "3.2.6",
+        "level": "A",
+        "ui_description": "**Consistent Help:** Help mechanisms are provided consistently across a set of web pages.",
+        "fix_tip": "If a help link, chatbot, or contact info is provided, ensure its relative position and identification are the same on every page."
+    },
+    {
+        "sc_id": "3.3.1",
+        "level": "A",
+        "ui_description": "Error Identification: Input errors are automatically detected and described to the user.",
+        "fix_tip": "Use ARIA attributes and native form validation to alert users to errors in a clear, accessible manner."
+    },
+    {
+        "sc_id": "3.3.2",
+        "level": "A",
+        "ui_description": "Labels or Instructions: Labels or instructions are provided for all form input fields.",
+        "fix_tip": "Ensure every input field has a corresponding <label> element properly associated using 'for' and 'id' attributes."
+    },
+    {
+        "sc_id": "3.3.3",
+        "level": "AA",
+        "ui_description": "Error Suggestion: Suggestions for correcting the input error are provided automatically.",
+        "fix_tip": "If an input error is detected, provide concrete, accessible suggestions for correction (e.g., 'Did you mean to enter mm/dd/yyyy?')."
+    },
+    {
+        "sc_id": "3.3.4",
+        "level": "AA",
+        "ui_description": "Error Prevention (Legal, Financial, Data): Users can review, correct, or reverse submissions.",
+        "fix_tip": "Provide a confirmation page or an 'undo' button for submissions involving critical data."
+    },
+    {
+        "sc_id": "3.3.5",
+        "level": "AAA",
+        "ui_description": "Help: Context-sensitive help is available.",
+        "fix_tip": "Provide clear instructions or help links specific to the task/field the user is currently interacting with."
+    },
+    {
+        "sc_id": "3.3.6",
+        "level": "AAA",
+        "ui_description": "Error Prevention (All): Users can review, correct, or reverse submissions for all forms.",
+        "fix_tip": "Apply error prevention (review, confirm, or reverse) to ALL forms, not just those with legal/financial data."
+    },
+    {
+        "sc_id": "3.3.7",
+        "level": "A",
+        "ui_description": "**Redundant Entry:** Automatically populate information available in a previous step.",
+        "fix_tip": "Avoid forcing users to enter the same information twice in one session, where possible, using auto-population or selection."
+    },
+    {
+        "sc_id": "3.3.8",
+        "level": "AA",
+        "ui_description": "**Accessible Authentication (Minimum):** No cognitive function tests (like memorizing patterns) for authentication.",
+        "fix_tip": "Provide a non-cognitive alternative for authentication (e.g., copy-pasteable password, email link, biometrics)."
+    },
+    {
+        "sc_id": "3.3.9",
+        "level": "AAA",
+        "ui_description": "**Accessible Authentication (Enhanced):** Authentication does not rely on object recognition or memorization tests.",
+        "fix_tip": "Authentication should rely on non-text content recognition or stored personal content, or provide an even simpler alternative than the minimum (3.3.8)."
+    },
+    {
+        "sc_id": "4.1.1",
+        "level": "A",
+        "ui_description": "Parsing: Markup is valid with complete tags, no duplicate attributes, and unique IDs.",
+        "fix_tip": "Ensure the HTML is well-formed. Use a validator tool to check for common parsing errors (Note: This SC is technically deprecated but kept for backwards compatibility in many implementations)."
+    },
+    {
+        "sc_id": "4.1.2",
+        "level": "A",
+        "ui_description": "Name, Role, Value: For all user interface components, the name and role can be programmatically determined.",
+        "fix_tip": "Use native HTML elements (buttons, inputs) or correct ARIA attributes for custom controls."
+    },
+    {
+        "sc_id": "4.1.3",
+        "level": "AA",
+        "ui_description": "Status Messages: Status messages (e.g., success/error alerts) can be programmatically determined.",
+        "fix_tip": "Use ARIA live regions (aria-live='polite') to announce dynamic content changes to screen reader users without shifting focus."
+    }
+]
